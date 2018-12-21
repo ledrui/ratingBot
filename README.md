@@ -1,8 +1,10 @@
-# Basic Bot template
+# Rating Bot 
+Restaurant rating 
+
 
 This bot has been created using [Microsoft Bot Framework](https://dev.botframework.com),
 
-This samples shows how to:
+This bot :
 - Use [LUIS](https://luis.ai) to implement core AI capabilities
 - Implement a multi-turn conversation using Dialogs
 - Handle user interruptions for such things as Help or Cancel
