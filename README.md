@@ -1,6 +1,6 @@
 # Rating Bot 
 Restaurant rating 
-
+![]('images/chat_image.png')
 
 This bot has been created using [Microsoft Bot Framework](https://dev.botframework.com),
 
