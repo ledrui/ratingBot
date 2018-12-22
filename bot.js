@@ -138,12 +138,12 @@ class BasicBot {
                     case DialogTurnStatus.empty:
                         // Determine what we should do based on the top intent from LUIS.
                         switch (topIntent) {
-                            case RATING_INTENT:
-                                await dc.beginDialog(RATING_DIALOG);
-                                break;
-                            // case GREETING_INTENT:
-                            //     await dc.beginDialog(GREETING_DIALOG);
+                            // case RATING_INTENT:
+                            //     await dc.beginDialog(RATING_DIALOG);
                             //     break;
+                            case GREETING_INTENT:
+                                await dc.beginDialog(GREETING_DIALOG);
+                                break;
                             case NONE_INTENT:
                             default:
                                 // None or no intent identified, either way, let's provide some help

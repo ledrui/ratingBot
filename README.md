@@ -1,6 +1,11 @@
 # Rating Bot 
 Restaurant rating 
-![]('images/chat_image.png')
+
+### Try it 
+On telegram: @surveybot
+web version can be found [here]('http://ledrui.github.io/surveybot')
+
+![chat_example]('https://github.com/ledrui/ratingBot/blob/master/images/chat_image.png?raw=true')
 
 This bot has been created using [Microsoft Bot Framework](https://dev.botframework.com),
 

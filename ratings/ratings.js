@@ -171,13 +171,13 @@ class Ratings extends ComponentDialog {
 
     async captureName(step) {
         // save name, if prompted for
-        // const userProfile = await this.userProfileAccessor.get(step.context);
-        // if (userProfile.name === undefined && step.result) {
-        //     let lowerCaseName = step.result;
-        //     // capitalize and set name
-        //     userProfile.name = lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.substr(1);
-        //     await this.userProfileAccessor.set(step.context, userProfile);
-        // }
+        const userProfile = await this.userProfileAccessor.get(step.context);
+        if (userProfile.name === undefined && step.result) {
+            let lowerCaseName = step.result;
+            // capitalize and set name
+            userProfile.name = lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.substr(1);
+            await this.userProfileAccessor.set(step.context, userProfile);
+        }
         await context.sendActivity(`Thank you for taking this survey!`);
         // return await step.next();
     }
